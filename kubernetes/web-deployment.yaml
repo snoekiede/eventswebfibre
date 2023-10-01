@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: iedesnoek/eventswebfiber:test
+          image: <your dockerhub username>/<your imagename>:<your tagname>
           imagePullPolicy: IfNotPresent
 
           env:
