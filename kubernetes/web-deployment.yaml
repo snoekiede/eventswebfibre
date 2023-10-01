@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-deployment
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: web
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: <your dockerhub username>/<your imagename>:<your tagname>
+          image: <your dockerhub username>/<your dockerhub image>:<your dockerhub tag>
           imagePullPolicy: IfNotPresent
 
           env:
